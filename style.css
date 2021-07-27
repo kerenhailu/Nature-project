@@ -1,47 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 :root {
     --bold : bold;
 }
 body{
-    height: 100vh;
-    width: 97vw;
-    margin: 2%;
+    /* height: 100vh; */
+     width: 100%;
+    /* margin: 2%;  */
     background-color: black;
     color: blanchedalmond;
+    font-weight: var(--bold);
+    /* text-shadow: 10px 10px 10px; */
     font-family:Arial, Verdana, Sans-serif; 
     /* position: relative; */
+    overflow-x: hidden;
     }
-/* video {        
-    position:absolute;
-        opacity: 0.7;
-        right: 10%;
-        bottom: 0;
-        width: 100%;
+.myVideo {        
+    position:fixed;
+        opacity: 0.6;
+        /* bottom: 0; */
+        width: 100vw;
         height: 100%;
-        text-align: center;
+        z-index: -10;
+        object-fit: cover;
       }
-     */
-nav {
-    width: 95vw;
+      #logo {
+          margin-top: -5%;
+      }
+    
+    
+     nav {
+    /* width: 90vw; */
     height: 10vh;
+    text-align: center;
     box-shadow: 10px 10px 10px;
-    background-color: rgb(240, 230, 140); 
+    background: #b9925e;
+    border-radius: 3%;
        
 }
 nav:hover {
-    background: rgb(235, 103, 16);
+  background-color: rgb(240, 230, 140);   
 }
-.pic {
-    margin: 1%;
-    box-shadow: 10px 10px 10px;
-    border-radius: 10%;
-    transition: 2s;
-    margin: 5%;
-    position: relative;
+nav a:hover {
+    color: black;
 }
-.pic:hover {
-    padding: 5%;
+     .slide {
+         width: 90vw;
+         height: 40vh;
+         display: flex;
+         text-align: center;
+         overflow: hidden;
+         margin-right: 400%;
+         margin-left: 5%;
+     }
+     .slide .slidePic {
+         width: 100%;
+         height: 100%;
+         flex-shrink: 0;
+         animation: sideToSide 20s alternate infinite;         
+
+
+     }
+     .slide .slidePic img {
+         width: 90%;
+         height: 100%;
+         opacity: 0.7;
+     }
+     @keyframes sideToSide {
+         0% { transform:translateX(0%);}
+        25%{ transform:translateX(-100%);}
+         50% { transform:translateX(-200%);}
+        75% { transform:translateX(-300%);}
+         100% { transform:translateX(-400%) ;}
+     }
+
+/* .pictures {
+    margin: 1%; */
+    /* box-shadow: 5px 5px 5px; */
+    /* border-radius: 10%;
+    transition: 2s; */
     
+ /* } */
+.pictures img {
+    margin: 1%;
+    transition: 2s;
 }
+.pictures img:hover {
+  width: 450px;
+  height: 230px;
+} 
+
+.picone {
+    width: 400px;
+    height: 200px;
+    color: black;
+    background-image: url("https://www.tiuli.com/image/5380a68aab2d27cb7ae21851fce3c89e.jpg?&width=830&height=470");
+}
+.picone h2 {
+   display: none; 
+   text-align: center;
+   margin-top: 20%;
+   font-weight: var(--bold);
+}
+.picone:hover > h2{
+    opacity: 0.7;
+    display: block;
+}
+.pictwo {
+    width: 400px;
+    height: 200px;
+    color: black;
+    background-image: url("https://www.tiuli.com/image/bb2448698fc5a202fb8b44af79ad572a.jpg?size=article");
+}
+.pictwo h2 {
+    display: none; 
+    text-align: center;
+    margin-top: 20%;
+    font-weight: var(--bold);
+ }
+.pictwo:hover > h2{
+    display: block;
+}
+.pictree {
+    width: 400px;
+    height: 200px;
+    color: black;
+    background-image: url("https://www.tiuli.com/image/db320a82734a073373f92b4b1dc7273d.jpg?&width=830&height=470");
+}
+.pictree h2 {
+    display: none; 
+    margin-top: 20%;
+    text-align: center;
+    font-weight: var(--bold);
+ }
+.pictree:hover > h2{
+    display: block;
+}
+.picfour {
+    width: 400px;
+    height: 200px;
+    color: black;
+    background-image: url("https://www.tiuli.com/image/0241e8a05936c7ae2f79b58251255614.jpg?size=article");
+}
+.picfour h2 {
+    display: none; 
+    text-align: center;
+    margin-top: 20%;
+    font-weight: var(--bold);
+ }
+.picfour:hover > h2{
+    display: block;
+}
+.picfive {
+    width: 400px;
+    height: 200px;
+    color: black;
+    background-image: url("https://www.tiuli.com/image/aaa5263b5321a750bffd920cf1d1ad27.jpg?size=article");
+}
+.picfive h2 {
+    display: none; 
+    text-align: center;
+    margin-top: 20%;
+    font-weight: var(--bold);
+ }
+.picfive:hover > h2{
+    display: block;
+}
+.picsix {
+    width: 400px;
+    height: 200px;
+    color: black;
+    background-image: url("https://www.tiuli.com/image/6c6f0fd85bf4a931d802abfd71385999.jpg?size=article");
+}
+.picsix h2 {
+    display: none; 
+    text-align: center;
+    margin-top: 20%;
+    font-weight: var(--bold);
+ }
+.picsix:hover > h2{
+    display: block;
+}
+
+
 
 ul {    
     text-align: center;
@@ -49,7 +192,15 @@ ul {
      display: flex;
     flex-direction: row;
     flex-wrap:wrap;
+    margin: 2%;
+    padding: 10px;
     justify-content: space-between;
+}
+nav ul {
+    justify-content: space-around;
+    margin: auto;
+    
+
 }
 
  ul a {
@@ -57,6 +208,11 @@ ul {
     font-weight: var(--bold);
     font-size: large;
 }
+/* .pictures img {
+    margin: 3%;
+    
+} */
+
 nav li {
     margin: 1%;
     
@@ -65,18 +221,51 @@ nav li {
 }
 h1 {
     font-weight: var(--bold);
-    text-shadow: 5px 5px 5px;
+    text-shadow: 2px 2px 2px rgb(80, 79, 76);
     text-align: center;
-    width: 98vw;
+    /* width: 98vw; */
+    margin: 2%;
 }
 
-video {
-    text-shadow: 10px 10px 10px;
-    border-radius: 3%;
-    text-align: center;
-    width: 93vw;
-    height: 200px;
+/* video {
+    display: block;
+    margin: auto;
+    text-shadow: 20px 20px 20px;
+    border-radius: 20%;
+} */
+.ptwo .center {
+    background: rgb(126, 231, 94);
+    width: 50%;
+    height: 20%;
 }
+.Attraction .partA,.Attraction .partB,.Attraction .partC {
+    transform: 3%;
+    opacity: 0.7;
+}
+.Attraction .partA a,.Attraction .partB a,.Attraction .partC a {
+    transform: 3%;
+    font-weight: var(--bold);
+    color: #0a0907;
+}
+.Attraction .partA a:hover,.Attraction .partB a:hover,.Attraction .partC a:hover{
+    color:#04440d;
+    background-color: #829079;
+}
+
+.Attraction .partB:hover,.Attraction .partA:hover,.Attraction .partC:hover {
+    background: #ede6b9;
+    color: #000;
+    text-align: bold;
+}
+/* .Attraction .partA:hover {
+    background: rgb(230, 224, 224);
+    color: orchid;
+}
+.Attraction .partC:hover {
+    background: rgb(230, 224, 224);
+    color: orchid;
+} */
+
 
 form {
       text-align: center;
@@ -84,19 +273,19 @@ form {
 
 }
 form input {
-    background-color: peachpuff;
+    background-color: #b9925e;
     border-radius: 2%; 
 }
 
 footer {
     padding: 2%;
-    background-color: rgb(224, 171, 71);
+    background: linear-gradient(#ede6b9,#b9925e,#829079);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    /* opacity:0.3; */
+    opacity:0.7;
     box-shadow: 10px 10px 10px;
-    border-radius: 3%;
+    /* border-radius: 1%; */
 }
 footer li {
   padding: 2%;  
@@ -120,3 +309,18 @@ footer ul {
     text-align: center;
     margin: 0.5%;
 }
+footer ul a:hover{
+    color: #000;
+}
+
+.pictures li{
+    margin-bottom: 5%;
+}
+@media screen and (max-width :768){
+    nav { 
+        width: 100%;
+    }
+    }
+    }
+
+    
