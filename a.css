@@ -29,6 +29,11 @@ nav {
 nav:hover {
     background: linear-gradient(#69a148,rgb(6, 126, 16));
 }
+#logo {
+    margin-top: -15%;
+    margin-right: 5%;
+    width: 100%;
+}
 form {
     border: 2px black;
 }
@@ -39,6 +44,7 @@ ul {
     flex-direction: row;
     flex-wrap:wrap;
     margin: 2%;
+    padding: 20px;
 }
 nav ul {
     justify-content: space-between;
@@ -169,6 +175,36 @@ footer a:hover  {
 .end {
     margin-right:5%;
     margin-top: -1%;
+}
+@media screen and (min-width: 768px) {
+    nav {
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    /* .two {
+        width: 100%;
+    }
+    .two li {
+        width: 30%;
+    } */
+
+
+}
+@media screen and (max-width: 426px) {
+    nav {
+        width: 100%;
+    }
+    nav li {
+        width: 15%;
+    }
+     #logo {
+        width: 70%;
+        margin-top: -100%;
+        margin-left: 340%;
+     }
+
 }
 
 
