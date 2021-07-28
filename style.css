@@ -36,13 +36,12 @@ body{
     height: 10vh;
     text-align: center;
     box-shadow: 10px 10px 10px;
-    background: #b9925e;
-    border-radius: 3%;
+    background: linear-gradient(#b9925e,#eec84c);
+    border-radius: 1%;
        
 }
 nav:hover {
-  background-color: rgb(240, 230, 140);   
-}
+    background: linear-gradient(#eec84c,#b9925e);}
 nav a:hover {
     color: black;
 }
@@ -245,7 +244,7 @@ h1 {
 .Attraction .partA a,.Attraction .partB a,.Attraction .partC a {
     transform: 3%;
     font-weight: var(--bold);
-    color: #0a0907;
+    color: #ee5a05;
 }
 .Attraction .partA a:hover,.Attraction .partB a:hover,.Attraction .partC a:hover{
     color:#04440d;
@@ -270,13 +269,17 @@ h1 {
 form {
       text-align: center;
       margin: 1%;
-
 }
 form input {
     background-color: #b9925e;
     border-radius: 2%; 
 }
-
+label {
+    font-weight: bold ;
+}
+.textform {
+    
+}
 footer {
     padding: 2%;
     background: linear-gradient(#ede6b9,#b9925e,#829079);
