@@ -356,8 +356,8 @@ footer ul a:hover{
             margin-left: 340%;
          }
          #formtext {
-            left: 0%;
-         }
+            margin-left: -11%;
+        }
          form {
             display: flex;
             flex-direction: column-reverse;
