@@ -1,5 +1,6 @@
 @media screen and (min-width: 768px) {
     body {
+    font-family: 'Amatic SC', cursive;
     text-align: right;
     color: darkgreen;
     font-weight: bold;
@@ -182,28 +183,59 @@ footer a:hover  {
     
 }
 @media screen and (max-width: 768px) {
-    /* .two {
+    
+    .two {
         width: 100%;
     }
     .two li {
-        width: 30%;
-    } */
-
-
-}
-@media screen and (max-width: 426px) {
-    nav {
-        width: 100%;
+        width: 40%;
     }
-    nav li {
-        width: 15%;
     }
-     #logo {
-        width: 70%;
-        margin-top: -100%;
-        margin-left: 340%;
-     }
 
+
+    @media screen and (max-width: 426px) {
+        body {
+            overflow-x: hidden;
+            background: linear-gradient(#b9925e,#829079);  
+        }
+        nav {
+            width: 100%;
+            background: #000;
+            background: linear-gradient(#829079,#b9925e);
+        }
+        nav li {
+            width: 15%;
+        }
+        h1 {
+            display: flex;
+             justify-content: center;
+
+        }
+         #logo {
+            padding: -5%;
+         }
+         #bgimg {
+            display: none;
+         }
+         nav ul {
+            text-align: center;
+            list-style-type: none;
+         }
+         footer {
+            background: linear-gradient(#b9925e,#829079);
+             display: flex;
+             justify-content: center;
+         }
+         ul {    
+            text-align: center;
+            list-style-type: none;
+             display: flex;
+            flex-direction: row;
+            flex-wrap:wrap;
+            margin: 2%;
+           padding: 20px;
+           justify-content: space-around;
+        }
 }
 
 
