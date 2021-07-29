@@ -78,16 +78,20 @@
         text-align: rtl;
     }
     /* ------- part three footer ----- */
+    footer {
+        width: 100%;        
+        background: linear-gradient(#b9925e,#829079);
+
+    }
     footer ul {
         display: flex;
         width: 100%;
-        background: linear-gradient(#b9925e,#829079);
         opacity: 0.7;
         margin: 2%;
         padding: 5%;
         font-weight: bold;
     }
-    }footer .footerA {
+    footer .footerA {
         margin-top: -2%;
     }
     .footerA {
@@ -107,7 +111,7 @@
         background: linear-gradient(#829079,#b9925e);
     }
     footer a:hover {
-        color: rgb(13, 7, 63);
+        color: rgb(169, 168, 180);
     }
     /* ------ media ------- */
     @media screen and (max-width: 768px) {
@@ -151,6 +155,11 @@
         body {
             overflow-x: hidden;
             background: linear-gradient(#b9925e,#829079);  
+        }
+        h2 {
+            text-align: center;
+            font-size: -50px;
+            width: 60%;
         }
         header {
             position: relative;
@@ -201,4 +210,4 @@
            padding: 20px;
            justify-content: space-around;
          }
-    }
+    

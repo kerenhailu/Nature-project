@@ -10,7 +10,7 @@
  #bgimg{   
      display: flex;     
     position:fixed;
-         opacity: 0.6; 
+         opacity: 0.3; 
          width: 100vw;
         height: 100%;
         z-index: -1;
@@ -56,11 +56,16 @@ main {
     width: 98w;
     height: 100%;
 }
+
+
  ul a {
     color: lavenderblush;
     font-weight: bold;
     font-size: large;
     transform: 2s;
+}
+h3 {
+    text-shadow: 5px 5px 5px rgba(160, 148, 148, 0.671);
 }
 
 .PaintballPic {
@@ -73,10 +78,6 @@ main {
 .PaintballPic img {
         border-radius: 5%;
 
-}
-.Paintball p {
-    font-weight: bold;
-    font-size: large;
 }
 h1 {
     font-weight: bold;
@@ -125,12 +126,11 @@ form {
     
 }
 .two {
- 
-    width: 100%;
+    width: 95%;
     justify-content: space-around;
 }
 .two li {
-    width: 30%;
+    width: 29%;
 }
 
 .two img {
@@ -245,7 +245,10 @@ footer a:hover  {
         flex-direction: column;
     }
     .two li {
-        width: 40%;
+        width: 70%;
+    }
+    form {
+        height: 400%;
     }
     }
 
@@ -305,7 +308,9 @@ footer a:hover  {
          }
          .end {
           flex-direction: column;
- 
+         }
+         a {
+             color: white;
          }
       
 }

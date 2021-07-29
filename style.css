@@ -297,19 +297,24 @@ footer ul a:hover{
             width: 15%;
         }
          #logo {
-            width: 70%;
-            margin-top: -100%;
-            margin-left: 340%;
+            display: none;
          }
          #formtext {
             margin-left: -11%;
         }
          form {
             display: flex;
-            flex-direction: column-reverse;
+            flex-direction: row;
             flex-wrap:wrap;
             width: 100%;
+            position: relative;
          }
+         #submit {
+             position: absolute;
+             margin-top: 35%;
+                  }
+
+         
          input {
              margin: 1%;
             width: 50%;
